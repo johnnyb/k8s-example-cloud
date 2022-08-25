@@ -1,6 +1,6 @@
 # Kubernetes Example Cluster
 
-This is the repository for the example cluster described in the book, "Cloud Native Applications with Docker and Kubernetes" by Jonathan Bartlett.
+This is the repository for the main example cluster described in the book, "Cloud Native Applications with Docker and Kubernetes" by Jonathan Bartlett.
 
 To run this cluster
 
@@ -15,3 +15,4 @@ To run this cluster
 
 Other branches have other versions of the cluster:
 
+* The `simple-cluster` branch has the code from Chapter 9, "Basic Kubernetes Management."
