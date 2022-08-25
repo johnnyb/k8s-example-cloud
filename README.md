@@ -17,3 +17,4 @@ Other branches have other versions of the cluster:
 
 * The `simple-cluster` branch has the code from Chapter 9, "Basic Kubernetes Management."
 * The `server-source` branch has the Sinatra code to create the API service.
+* The `frontend-html` branch has the HTML code for the frontend.
