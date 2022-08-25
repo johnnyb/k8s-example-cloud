@@ -1,17 +1,8 @@
-# Kubernetes Example Cluster
+# Simple Deployment
 
-This is the repository for the example cluster described in the book, "Cloud Native Applications with Docker and Kubernetes" by Jonathan Bartlett.
+This code is just a simple example deployment.  
+You can install this by simply doing: `kubectl apply -f .`
 
-To run this cluster
+To find the IP address that this is listening on, do: `kubectl get services`
 
-* Create a Kubernetes cluster (on Linode.com, for instance)
-* export the environment variable `KUBECONFIG` to point to the kubeconfig file for the cluster.
-* Install the main application: `kubectl apply -f .`
-* Install the environment-specific configurations: `kubectl apply -f environments/production`
-* Install the secrets: `kubectl apply -f secrets`
-* Install the nginx Ingress: `kubectl apply -f https://bit.ly/ingress_nginx_1_2_0`
-
-# Other Branches
-
-Other branches have other versions of the cluster:
-
+Note that the Pod defined in `simple-pod.yaml` will be running, since there is no service connected to it the Pod is not accessible.

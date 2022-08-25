@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: my-file-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      my-label-name: my-label-value
+  template:
+    metadata:
+      labels:
+        my-label-name: my-label-value
+    spec:
+      containers:
+        - name: my-http-container 
+          image: johnnyb61820/simple-web-server 
+          ports:
+            - containerPort: 8070
